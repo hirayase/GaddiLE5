@@ -6,4 +6,4 @@ export type Post = {
 	userName: string;
 	firstName: string;
 	lastName: string;
-}
+};
