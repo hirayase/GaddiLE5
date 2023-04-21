@@ -1,38 +1,19 @@
-<form
-	name="form"
-	(ngSubmit)="onSubmit()"
-	#f="ngForm">
-
+<h1>New User?</h1>
+<h3>Register here:</h3>
+<div class="register-container">
+<form name="form" (ngSubmit)="onSubmit()" #f="ngForm">
 	<label for="username">Username</label>
-	<input
-		type="text"
-		name="username"
-		[(ngModel)]="form.username"
-		required
-		#username="ngModel" />
-
+	<input type="text" name="username" [(ngModel)]="form.username" required #username="ngModel" />
+  
 	<label for="password">Password</label>
-	<input
-		type="password"
-		name="password"
-		[(ngModel)]="form.password" required
-		#password="ngModel" />
-		
+	<input type="password" name="password" [(ngModel)]="form.password" required #password="ngModel" />
+  
 	<label for="firstName">First Name</label>
-	<input
-		type="text"
-		name="firstName"
-		[(ngModel)]="form.firstName"
-		required
-		#firstName="ngModel" />
-		
+	<input type="text" name="firstName" [(ngModel)]="form.firstName" required #firstName="ngModel" />
+  
 	<label for="lastName">Last Name</label>
-	<input
-		type="lastName"
-		name="lastName"
-		[(ngModel)]="form.lastName"
-		required #lastName="ngModel" />
-		
-		<button>Submit</button>
-
+	<input type="text" name="lastName" [(ngModel)]="form.lastName" required #lastName="ngModel" />
+  
+	<button>Submit</button>
 </form>
+</div>
